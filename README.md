@@ -1,12 +1,89 @@
-# React + Vite
+# AI-Powered Sentiment Analysis Tool (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend for the AI-Powered Sentiment Analysis Tool, built with **React** and **Vite**. It allows users to submit movie reviews and receive sentiment analysis results using both rule-based and GPT-4 powered AI models.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Modern, responsive UI with Tailwind CSS
+- Analyze movie reviews for sentiment (Positive, Negative, Neutral)
+- Results from both rule-based and GPT-4 models
+- Copy results to clipboard
+- Instant feedback and error handling
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Clone the repository and navigate to the `frontend` folder:
+
+   ```sh
+   git clone <your-repo-url>
+   cd frontend
+   ```
+
+2. Install dependencies:
+
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Configure the backend URL in `.env`:
+
+   ```
+   VITE_BACKEND_URL=http://localhost:5000
+   ```
+
+### Running the App
+
+Start the development server:
+
+```sh
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Building for Production
+
+```sh
+npm run build
+# or
+yarn build
+```
+
+### Linting
+
+```sh
+npm run lint
+```
+
+## Project Structure
+
+- `src/` – Main source code
+  - `pages/` – Home and Result pages
+  - `assets/` – Static assets
+  - `App.jsx` – Main app component
+  - `main.jsx` – Entry point
+- `public/` – Static files
+- `index.html` – HTML template
+
+## Environment Variables
+
+- `VITE_BACKEND_URL` – URL of the backend API (default: `http://localhost:5000`)
+
+## License
+
+MIT
+
+---
+
+*Built with [Vite](https://vitejs.dev/) and [React](https://react.dev/).*
